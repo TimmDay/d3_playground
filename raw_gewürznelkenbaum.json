@@ -1,0 +1,170 @@
+{
+    "downward": {
+        "name": "origin",
+        "direction": "downward",
+        "children": []
+    },
+    "upward": {
+        "name": "origin",
+        "direction": "upward",
+        "children": [
+            {
+                "name": "46298\nGewürznelkenbaum\n",
+                "children": [
+                    {
+                        "name": "45326\nMyrtengewächs\n",
+                        "children": [
+                            {
+                                "name": "45188\nFreiblumenblättriges Gewächs\n",
+                                "children": [
+                                    {
+                                        "name": "45187\nZweikeimblättrige\nZweikeimblättriges Gewächs\n",
+                                        "children": [
+                                            {
+                                                "name": "44976\nBedecktsamer\n",
+                                                "children": [
+                                                    {
+                                                        "name": "44975\nSamenpflanze\n",
+                                                        "children": [
+                                                            {
+                                                                "name": "44960\nGewächs\nPflanze\n",
+                                                                "children": [
+                                                                    {
+                                                                        "name": "50990\nLebewesen\nOrganismus\n",
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "50986\nKreatur\nWesen\nWesenheit\n",
+                                                                                "children": [
+                                                                                    {
+                                                                                        "name": "50982\nnatürliches Objekt\n",
+                                                                                        "children": [
+                                                                                            {
+                                                                                                "name": "50981\nObjekt\n",
+                                                                                                "children": [
+                                                                                                    {
+                                                                                                        "name": "50980\nEntität\n",
+                                                                                                        "children": [
+                                                                                                            {
+                                                                                                                "name": "51001\nGNROOT\n",
+                                                                                                                "children": []
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "46042\nBaum\n",
+                        "children": [
+                            {
+                                "name": "46041\nGehölz\nHolzgewächs\nHolzpflanze\n",
+                                "children": [
+                                    {
+                                        "name": "44960\nGewächs\nPflanze\n",
+                                        "children": [
+                                            {
+                                                "name": "50990\nLebewesen\nOrganismus\n",
+                                                "children": [
+                                                    {
+                                                        "name": "50986\nKreatur\nWesen\nWesenheit\n",
+                                                        "children": [
+                                                            {
+                                                                "name": "50982\nnatürliches Objekt\n",
+                                                                "children": [
+                                                                    {
+                                                                        "name": "50981\nObjekt\n",
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "50980\nEntität\n",
+                                                                                "children": [
+                                                                                    {
+                                                                                        "name": "51001\nGNROOT\n",
+                                                                                        "children": []
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "46292\nGewürzpflanze\n",
+                        "children": [
+                            {
+                                "name": "46311\nIndustriepflanze\nNutzpflanze\n",
+                                "children": [
+                                    {
+                                        "name": "44965\nKulturpflanze\n",
+                                        "children": [
+                                            {
+                                                "name": "44960\nGewächs\nPflanze\n",
+                                                "children": [
+                                                    {
+                                                        "name": "50990\nLebewesen\nOrganismus\n",
+                                                        "children": [
+                                                            {
+                                                                "name": "50986\nKreatur\nWesen\nWesenheit\n",
+                                                                "children": [
+                                                                    {
+                                                                        "name": "50982\nnatürliches Objekt\n",
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "50981\nObjekt\n",
+                                                                                "children": [
+                                                                                    {
+                                                                                        "name": "50980\nEntität\n",
+                                                                                        "children": [
+                                                                                            {
+                                                                                                "name": "51001\nGNROOT\n",
+                                                                                                "children": []
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

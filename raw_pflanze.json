@@ -1,0 +1,292 @@
+{
+    "downward": {
+        "name": "origin",
+        "direction": "downward",
+        "children": [
+            {
+                "name": "44961\nTopfpflanze\n",
+                "children": []
+            },
+            {
+                "name": "44962\nJungpflanze\n",
+                "children": []
+            },
+            {
+                "name": "44963\nMutterpflanze\n",
+                "children": []
+            },
+            {
+                "name": "44965\nKulturpflanze\n",
+                "children": []
+            },
+            {
+                "name": "44966\nGartenpflanze\n",
+                "children": []
+            },
+            {
+                "name": "44969\nSpaltpflanze\n",
+                "children": []
+            },
+            {
+                "name": "44975\nSamenpflanze\n",
+                "children": []
+            },
+            {
+                "name": "45897\nSporenpflanze\n",
+                "children": []
+            },
+            {
+                "name": "45898\nGefäßpflanze\n",
+                "children": []
+            },
+            {
+                "name": "46041\nGehölz\nHolzgewächs\nHolzpflanze\n",
+                "children": []
+            },
+            {
+                "name": "46136\nSchlingpflanze\n",
+                "children": []
+            },
+            {
+                "name": "46137\nHeidepflanze\nWaldpflanze\n",
+                "children": []
+            },
+            {
+                "name": "46182\nAlpenpflanze\n",
+                "children": []
+            },
+            {
+                "name": "46308\nStaude\n",
+                "children": []
+            },
+            {
+                "name": "46337\nBlume\n",
+                "children": []
+            },
+            {
+                "name": "46650\nGiftpflanze\n",
+                "children": []
+            },
+            {
+                "name": "46657\nKraut\n",
+                "children": []
+            },
+            {
+                "name": "46715\nRanke\n",
+                "children": []
+            },
+            {
+                "name": "46752\nKätzchenblütler\n",
+                "children": []
+            },
+            {
+                "name": "46801\nKeim\nKeimling\n",
+                "children": []
+            },
+            {
+                "name": "65227\nSämling\n",
+                "children": []
+            },
+            {
+                "name": "66836\nLandpflanze\n",
+                "children": []
+            },
+            {
+                "name": "67724\nKletterpflanze\n",
+                "children": []
+            },
+            {
+                "name": "68236\nZimmerpflanze\n",
+                "children": []
+            },
+            {
+                "name": "68943\nSukkulente\n",
+                "children": []
+            },
+            {
+                "name": "69664\nPflänzchen\n",
+                "children": []
+            },
+            {
+                "name": "70230\nWildpflanze\n",
+                "children": []
+            },
+            {
+                "name": "70549\nBlütenpflanze\n",
+                "children": []
+            },
+            {
+                "name": "72429\nNadelholzgewächs\n",
+                "children": []
+            },
+            {
+                "name": "74655\nHybride\nKreuzung\n",
+                "children": []
+            },
+            {
+                "name": "75712\nRohr\n",
+                "children": []
+            },
+            {
+                "name": "76492\nWirtspflanze\n",
+                "children": []
+            },
+            {
+                "name": "80348\nEpiphyt\n",
+                "children": []
+            },
+            {
+                "name": "83532\nNeophyt\n",
+                "children": []
+            },
+            {
+                "name": "86269\nHalophyt\nSalzpflanze\n",
+                "children": []
+            },
+            {
+                "name": "86614\nPionierpflanze\n",
+                "children": []
+            },
+            {
+                "name": "72440\nGeophyt\n",
+                "children": []
+            },
+            {
+                "name": "101838\nGrünpflanze\n",
+                "children": []
+            },
+            {
+                "name": "104059\nRaupenfutterpflanze\n",
+                "children": []
+            },
+            {
+                "name": "104192\nEigengewächs\n",
+                "children": []
+            },
+            {
+                "name": "108380\nElter\n",
+                "children": []
+            },
+            {
+                "name": "108484\nBodendecker\n",
+                "children": []
+            },
+            {
+                "name": "109648\nKreuzblütengewächs\n",
+                "children": []
+            },
+            {
+                "name": "110054\nStock\n",
+                "children": []
+            },
+            {
+                "name": "113908\nEnergiepflanze\n",
+                "children": []
+            },
+            {
+                "name": "115178\nKryptogame\n",
+                "children": []
+            },
+            {
+                "name": "116999\nArchäophyt\n",
+                "children": []
+            },
+            {
+                "name": "122038\nWiesenpflanze\n",
+                "children": []
+            },
+            {
+                "name": "122986\nRankpflanze\n",
+                "children": []
+            },
+            {
+                "name": "124271\nMeerespflanze\n",
+                "children": []
+            },
+            {
+                "name": "124416\nEinzelpflanze\n",
+                "children": []
+            },
+            {
+                "name": "125349\nSchmarotzerpflanze\n",
+                "children": []
+            },
+            {
+                "name": "126261\nZwiebelgewächs\n",
+                "children": []
+            },
+            {
+                "name": "129597\nWüstenpflanze\n",
+                "children": []
+            },
+            {
+                "name": "133208\nGemüsepflanze\n",
+                "children": []
+            },
+            {
+                "name": "135273\nPolsterpflanze\n",
+                "children": []
+            },
+            {
+                "name": "135614\nGetreidepflanze\n",
+                "children": []
+            },
+            {
+                "name": "136127\nBegleitpflanze\n",
+                "children": []
+            },
+            {
+                "name": "136761\nZeigerpflanze\n",
+                "children": []
+            },
+            {
+                "name": "137221\nXerophyt\n",
+                "children": []
+            },
+            {
+                "name": "138955\nBalkonpflanze\n",
+                "children": []
+            }
+        ]
+    },
+    "upward": {
+        "name": "origin",
+        "direction": "upward",
+        "children": [
+            {
+                "name": "44960\nGewächs\nPflanze\n",
+                "children": [
+                    {
+                        "name": "50990\nLebewesen\nOrganismus\n",
+                        "children": [
+                            {
+                                "name": "50986\nKreatur\nWesen\nWesenheit\n",
+                                "children": [
+                                    {
+                                        "name": "50982\nnatürliches Objekt\n",
+                                        "children": [
+                                            {
+                                                "name": "50981\nObjekt\n",
+                                                "children": [
+                                                    {
+                                                        "name": "50980\nEntität\n",
+                                                        "children": [
+                                                            {
+                                                                "name": "51001\nGNROOT\n",
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
