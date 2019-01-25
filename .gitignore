@@ -1,8 +1,0 @@
-node_modules
-package-lock.json
-.gitignore
-.idea
-.DS_Store
-
-tree.js
-example_v4.js
