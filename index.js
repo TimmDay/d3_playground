@@ -1,8 +1,13 @@
+// todo width and height passed in as props
+// todo data passed in
+
+
 /**
  * Initialize tree chart object and data loading.
  * @param {Object} d3Object Object for d3, injection used for testing.
  */
-var treeChart = function (d3Object) {
+
+const treeChart = function (d3Object) {
   this.d3 = d3Object;
   // Initialize the direction texts.
   this.directions = ['upward', 'downward'];
@@ -14,28 +19,32 @@ var treeChart = function (d3Object) {
 treeChart.prototype.drawChart = function () {
   // First get tree data for both directions.
   this.treeData = {};
-  var self = this;
+  const self = this;
   
-  
-// TODO right here
-
 // raw_pflanze.json
 // raw_gewürznelkenbaum
-  d3.json('raw_pflanze.json', function (error, allData) {
-    self.directions.forEach(function (direction) {
+// raw_bank
+// raw_brauchen //todo what is the issue here?
+  d3.json('raw_pflanze.json',  (error, allData) => {
+
+    self.directions.forEach((direction) => {
       self.treeData[direction] = allData[direction];
     });
+
     self.graphTree(self.getTreeConfig());
   });
 };
+
+
+
 
 /**
  * Get tree dimension configuration.
  * @return {Object} treeConfig Object containing tree dimension size
  *     and central point location.
  */
-treeChart.prototype.getTreeConfig = function () {
-  var treeConfig = { 'margin': { 'top': 10, 'right': 5, 'bottom': 0, 'left': 30 } }
+treeChart.prototype.getTreeConfig = () => {
+  const treeConfig = { 'margin': { 'top': 10, 'right': 5, 'bottom': 0, 'left': 30 } }
   // This will be the maximum dimensions
   treeConfig.chartWidth = (960 - treeConfig.margin.right -
     treeConfig.margin.left);
@@ -48,11 +57,14 @@ treeChart.prototype.getTreeConfig = function () {
   return treeConfig;
 };
 
+
+
+
+
 /**
  * Graph tree based on the tree config.
  * @param {Object} config Object for chart dimension and central location.
  */
-
 treeChart.prototype.graphTree = function (config) {
   var self = this;
   var d3 = this.d3;
@@ -60,11 +72,13 @@ treeChart.prototype.graphTree = function (config) {
   var duration = config.duration;
   // id is used to name all the nodes;
   var id = 0;
-  var diagonal = d3.svg.diagonal()
-    .projection(function (d) { return [d.x, d.y]; });
-  var zoom = d3.behavior.zoom()
-    .scaleExtent([0.1, 2])
-    .on('zoom', redraw);
+
+  var diagonal = d3.svg.diagonal().projection(function (d) { return [d.x, d.y]; }); //TODO: V3
+  // let diagonal = d3.linkHorizontal().x(function (d) {return d.y;}).y(function (d) {return d.x;}); //TODO: V4
+
+
+  var zoom = d3.behavior.zoom().scaleExtent([0.1, 2]).on('zoom', redraw); //TODO V3
+  // var zoom = d3.zoom().scaleExtent([0.1, 2]).on('zoom', redraw); //TODO: V4
 
     //todo is 'body' where it is attached to index.html?
   var svg = d3.select('body')
@@ -76,9 +90,11 @@ treeChart.prototype.graphTree = function (config) {
     .on('mousedown', disableRightClick)
     .call(zoom)
     .on('dblclick.zoom', null);
+
   var treeG = svg.append('g')
     .attr('transform',
       'translate(' + config.margin.left + ',' + config.margin.top + ')');
+
   treeG.append('text').text('Root Node')
     .attr('class', 'centralText')
     .attr('x', config.centralWidth)
@@ -102,6 +118,8 @@ treeChart.prototype.graphTree = function (config) {
    * @param {Object} originalData Original data object to get configurations.
    * @param {Object} g Handle to svg.g.
    */
+
+
   function update(source, originalData, g) {
     // Set up the upward vs downward separation.
     var direction = originalData['direction'];
@@ -114,12 +132,34 @@ treeChart.prototype.graphTree = function (config) {
     // way too many nodes to fit in the screen, while we want a symmetric
     // view for upward chart.
     var nodeSpace = 50;
-    var tree = d3.layout.tree().sort(sortByDate).nodeSize([nodeSpace, 0]);
+
+   
+    // declares a tree layout and assigns the size
+
+
+    // var treeMap = d3.tree().nodeSize([nodeSpace, 0]); //TODO: V4
+    // let root = d3.hierarchy(originalData, function(d) { return d.children; }); //TODO: V4
+    // // treeMap(root);
+    // console.log(treeMap); //todo
+    // var nodes = root.descendants();
+
+    // var links = root.links(); //TODO V4
+
+    
+
+    var tree = d3.layout.tree().sort(sortByDate).nodeSize([nodeSpace, 0]); //TODO: V3
     if (forUpward) {
-      tree.size([config.chartWidth, config.chartHeight]);
+      // treeMap.size([config.chartWidth, config.chartHeight]).nodeSize([nodeSpace, 0]); //TODO V4
+      tree.size([config.chartWidth, config.chartHeight]); //TODO V3
     }
-    var nodes = tree.nodes(originalData);
-    var links = tree.links(nodes);
+    var nodes = tree.nodes(originalData); //TODO: V3
+    var links = tree.links(nodes); //TODO: V3
+
+    
+
+    console.log(nodes);
+    console.log(links);
+
     // Offset x-position for downward to view the left most record.
     var offsetX = 0;
     if (!forUpward) {
@@ -127,6 +167,7 @@ treeChart.prototype.graphTree = function (config) {
         (originalData.children) ? 'children' : '_children'];
       offsetX = d3.min([childrenNodes[0].x, 0]);
     }
+
     // Normalize for fixed-depth.
     nodes.forEach(function (d) {
       d.y = downwardSign * (d.depth * linkLength) + config.centralHeight;
@@ -153,6 +194,9 @@ treeChart.prototype.graphTree = function (config) {
       .on('click', click);
     nodeEnter.append('circle')
       .attr('r', 1e-6);
+
+
+
     // Add Text stylings for node main texts
     nodeEnter.append('text')
       .attr('x', function (d) {
@@ -173,16 +217,19 @@ treeChart.prototype.graphTree = function (config) {
         }
         return d.name;
       })
-      .style('fill-opacity', 1e-6)
-      .style({
-        'fill': function (d) {
-          if (d.name == 'origin') { return nodeColor; }
-        }
-      })
+      // .style('fill-opacity', 1e-6)
+      // .style({
+      //   'fill': function (d) {
+      //     if (d.name == 'origin') { return nodeColor; }
+      //   }
+      // })
       .attr('transform', function (d) {
         if (d.name != 'origin') { return 'rotate(-20)'; }
       })
       ;
+
+
+
 
     // Transition nodes to their new position.
     var nodeUpdate = node.transition()
@@ -264,6 +311,8 @@ treeChart.prototype.graphTree = function (config) {
       update(d, originalData, g);
     }
   }
+
+
   // Collapse and Expand can be modified to include touched nodes.
   /**
    * Tree function to expand all nodes.

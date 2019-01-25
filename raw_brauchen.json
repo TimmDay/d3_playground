@@ -1,0 +1,23 @@
+{
+    "downward":{
+        "name":"origin",
+        "direction":"downward",
+        "children":[
+            {"name":"54825\nbeanspruchen\n","children":[]}
+            ]
+    },
+            
+    "upward":{
+        "name":"origin",
+        "direction":"upward",
+        "children":[
+            {
+                "name":"54824\nbenötigen\nbrauchen\nkosten\n",
+                "children":[{"name":"61018\nbrauchen\n",
+                    "children":[
+                        {
+                            "name":"51892\nsein\n",
+                            "children":[
+                                {"name":"51001\nGNROOT\n",
+                                    "children":[]
+                                    }]}]}]}]}}
